@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>X-tra large text LLM generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="static/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>X-tra large text LLM generator</h1>
+    <form id="infer-form">
+      <label>
+        Prompt
+        <textarea id="prompt" rows="4" placeholder="What is the purpose of life?">What is the purpose of life?</textarea>
+      </label>
+
+      <div class="grid">
+        <label>
+          Max new tokens
+          <input id="tokens" type="number" min="1" max="1024" step="1" value="240" />
+          <small>Range: 1–1024 (default 240)</small>
+        </label>
+
+        <label>
+          Top-k
+          <input id="topk" type="number" min="0" max="128" step="1" value="3" />
+          <small>0 disables (default 3)</small>
+        </label>
+
+        <label>
+          Temperature
+          <input id="temperature" type="number" min="0.05" max="2.5" step="0.05" value="0.8" />
+          <small>Range: 0.05–2.5 (default 0.8)</small>
+        </label>
+      </div>
+
+      <button type="submit" id="run-btn">Generate</button>
+    </form>
+
+    <div id="status" class="status"></div>
+    <div id="output" class="output" contenteditable="false" spellcheck="false"></div>
+  </div>
+
+  <script src="static/app.js"></script>
+</body>
+</html>

@@ -1,10 +1,10 @@
 # Extending Effective Context with RoPE + ALiBi in a BDH-Style Architecture
 
 
-## Author
+#### Author
 
 *   [Piotr Tomasiński](p.tomdsinski@gmail.com)  - context window extention concepts & implementation
-
+## Abstract
 This repository explores how to extend the **effective context window** and **usable input/output length** of a BDH-style language model by combining:
 
 - **Rotary Position Embeddings (RoPE)**  

@@ -1,4 +1,4 @@
-# BDHStyleBiasAttentionALiBi: Extending Effective Context with RoPE + ALiBi in a BDH-Style Architecture
+# Extending Effective Context with RoPE + ALiBi in a BDH-Style Architecture
 
 
 ## Author
